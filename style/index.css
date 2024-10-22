@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  background: url("../img/hero.png") no-repeat;
+  height: 400px;
+  background-size: cover;
+
+  & .hero-text {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+
+    & h1 {
+      color: #fff;
+      font-size: 2.5rem;
+      text-align: center;
+      padding-top: 100px;
+      transition: 0.5s;
+      margin-block: 5px;
+    }
+
+    & p {
+      color: #fff;
+      text-align: center;
+      font-size: 1.8rem;
+      transition: 0.5s;
+      margin-block: 20px;
+    }
+    & span {
+      border-bottom: 2px solid #fff;
+    }
+
+    & button {
+      background-color: #d4112d;
+      border: none;
+      width: 250px;
+      height: 40px;
+      color: #fff;
+      border-radius: 25px;
+      margin-inline: 3px;
+      font-size: 1rem;
+      font-weight: 500;
+      transition: 0.5s;
+    }
+
+    & button:hover {
+      cursor: pointer;
+      background-color: #fff;
+      color: #d4112d;
+      scale: 1.02;
+    }
+
+    & .buttons {
+      text-align: center;
+    }
+  }
+}
+
+@media (width < 700px) {
+  section.hero {
+    & .hero-text {
+      & h1 {
+        font-size: 2rem;
+      }
+      & p {
+        font-size: 1.5rem;
+        padding-block: 5px;
+      }
+
+      & button {
+        width: 200px;
+        height: 40px;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+/* line section */
+
+.line {
+  height: 54vh;
+  background-color: #bebebe5c;
+}

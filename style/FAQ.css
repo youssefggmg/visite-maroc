@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+    /* QUESTIONS FRÉQUENTES. */
+.faq-section {
+    background-color: #283C5A;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.faq-section h1 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Paragraph1 */
+.Paragraph1 {
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* Text container  */
+
+.text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 27vh; /* Vertically centers the text in the viewport */
+    text-align: center;
+}
+
+.text-container p {
+    font-size: 1.2rem; /* Adjust font size as needed */
+    font-weight: bold;
+}

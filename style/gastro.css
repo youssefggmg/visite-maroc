@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap");
+
 *{
     font-family: 'Inter';
 }
@@ -55,5 +57,31 @@
         color: #283C5A;
         font-size: 40px;
         font-weight: bold;
+    }
+}
+.entree{
+    display: flex;
+    margin: 40px;
+    position: relative;
+    
+    & img{
+        width: 600px;
+    }
+    & .text-entree{
+        width: 60%;
+        position: absolute;
+        padding: 20px;
+        background-color: rgba(242, 242, 242, 0.77);
+        margin-left: 400px;
+        margin-top: 40px;
+
+        & h1{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        & p{
+            line-height: 25px;
+            padding-left: 20px;
+        }
     }
 }

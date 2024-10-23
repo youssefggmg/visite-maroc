@@ -9,6 +9,7 @@
     object-fit: cover;
     background-repeat: no-repeat;
     height: 50vh;
+    background-size: cover;
     & .heroFood{
         display: flex;
         justify-content: center;
@@ -83,5 +84,30 @@
             line-height: 25px;
             padding-left: 20px;
         }
+    }
+}
+@media only screen and (min-width: 768px) and  (max-width: 1023px) {
+    .entree{
+        flex-direction: column;
+        gap: 2em;
+        align-items: center;
+        & .text-entree{
+            position: static ;
+            margin-top: 0px ;
+            margin-left: 0px ;
+            width: 63%;
+        }
+        
+    }
+    .image-entree img{
+        width: 100%;
+    }
+    .image-entree, .text-entree{
+        width: 70% ;
+        border-radius: 50px;
+        overflow: hidden;
+    }
+    .text-entree h2{
+        text-align: center;
     }
 }

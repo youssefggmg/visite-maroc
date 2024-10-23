@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap");
+
 * {
     margin: 0;
     padding: 0;
@@ -5,12 +7,10 @@
     font-family: 'Inter';
 }
 
-
-
 .hero-section {
     position: relative;
     height: 70vh;
-    background-image: url('../img/tradit.jpg'); /* Remplacez par le chemin correct de votre image */
+    background-image: url('../img/tradit.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -82,4 +82,68 @@ h3{
     color: #283C5A;
     font-size: 35px;
     font-weight: bold;
+}
+
+.best-places {
+    padding: 0 20px;
+    text-align: center;
+}
+
+.places-container {
+    display: flex;
+    justify-content: center;
+}
+
+.place-card {
+    display: flex;
+    gap: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px;
+    align-items: center;
+    text-align: left;
+}
+
+.place-card img {
+    width: 480px;
+    height: 300px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+.place-content {
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+}
+
+.place-content h4 {
+    color: #D4112D;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.place-content p {
+    color: #000000;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #D4112D;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+.center-btn{
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #FC3C58;
 }

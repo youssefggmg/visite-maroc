@@ -115,6 +115,9 @@ body{
     .text-entree h2{
         text-align: center;
     }
+    .end , .border-b{
+        display: none;
+    }
 }
 
 .border-b{

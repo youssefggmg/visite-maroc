@@ -147,3 +147,8 @@ h3{
 .btn:hover {
     background-color: #FC3C58;
 }
+
+.reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}

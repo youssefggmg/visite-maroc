@@ -82,7 +82,35 @@
 
 /* line section */
 
-.line {
-  height: 54vh;
-  background-color: #bebebe5c;
+.line-status {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 30px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+
+  & .element {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1.2rem;
+    width: 250px;
+  }
+
+  & .Title {
+    font-size: 2.5rem;
+    font-weight: bolder;
+  }
+
+  & img {
+    height: 15px;
+    width: 15px;
+    margin-inline: 2px;
+  }
+
+  & .text-line {
+    font-weight: 500;
+  }
 }

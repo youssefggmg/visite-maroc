@@ -3,10 +3,14 @@
 *{
     font-family: 'Inter';
 }
+body{
+    box-sizing: border-box;
+}
 .hero{
     background-image: url(/img/Tajine1.png);
     background-position: center;
     object-fit: cover;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 50vh;
     & .heroFood{
@@ -46,6 +50,7 @@
         text-align: center;
         color: #000000;
         font-weight: medium;
+        margin-left: 40px;
 
     & .cuisine{
         color: #D4112D;
@@ -53,7 +58,7 @@
 }
 .food{
     & h3{
-        padding-left: 16px;
+        margin-left: 40px;
         color: #283C5A;
         font-size: 40px;
         font-weight: bold;
@@ -84,4 +89,22 @@
             padding-left: 20px;
         }
     }
+}
+.border-b{
+    margin-left: 40px;
+    content: "";
+    width: 400px;
+    border-bottom: 2px solid red;
+}
+.reverse{
+    display: flex;
+    flex-direction: row-reverse;
+    & .text-entree{
+        margin-right: 400px;
+        margin-top: 40px;
+
+    }
+}
+.end{
+    margin-left: 65%;
 }

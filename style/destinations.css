@@ -152,3 +152,32 @@ h3{
     display: flex;
     flex-direction: row-reverse;
 }
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    list-style: none;
+}
+
+.pagination li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.pagination li a:hover {
+    background-color: #A9A9A9;
+    padding: 10px 15px;
+    border-radius: 50px;
+}
+
+.pagination li a.active {
+    background-color: #D4112D;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50px;
+}
+
+.pagination li a.active:hover {
+    background-color: #FC3C58;
+}

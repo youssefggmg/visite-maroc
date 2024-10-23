@@ -1,7 +1,6 @@
 footer {
   background-color: #283c5a;
   color: #fff;
-  height: 320px;
 
   & a {
     color: #fff;
@@ -17,6 +16,7 @@ footer {
       & h1 {
         font-size: 2rem;
         margin-bottom: 20px;
+        transition: 0.5s;
       }
       & p {
         font-size: 1.2rem;
@@ -28,6 +28,7 @@ footer {
       & h1 {
         font-size: 2rem;
         margin-bottom: 20px;
+        transition: 0.5s;
       }
       & div {
         display: flex;
@@ -45,12 +46,12 @@ footer {
       & h1 {
         font-size: 2rem;
         margin-bottom: 20px;
+        transition: 0.5s;
       }
       & div {
         display: flex;
         gap: 10px;
         margin-block: 20px;
-        align-items: center;
         font-size: 1.3rem;
         & i {
           margin-right: 10px;
@@ -65,5 +66,56 @@ footer {
     font-size: 1.2rem;
     font-weight: bold;
     border-top: #fff 2px solid;
+    padding-bottom: 10px;
+    transition: 0.5s;
+  }
+}
+
+@media (width< 900px) {
+  footer {
+    & .up {
+      display: block;
+    }
+
+    & .middle {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (width< 620px) {
+  footer {
+    & .up {
+      & .right {
+        & h1 {
+          font-size: 1.8rem;
+        }
+        & p {
+          font-size: 1rem;
+          width: 400px;
+          line-height: 40px;
+        }
+      }
+      & .middle {
+        & h1 {
+          font-size: 1.8rem;
+        }
+        & div {
+          font-size: 1.2rem;
+        }
+      }
+      & .left {
+        & h1 {
+          font-size: 1.8rem;
+        }
+        & div {
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    & .down {
+      font-size: 1rem;
+    }
   }
 }

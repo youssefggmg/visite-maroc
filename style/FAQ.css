@@ -70,25 +70,25 @@
 }
 .parent .question label{
     display: flex;
-    align-items: center;
+    align-items: center;    
     cursor: pointer;
+    margin-top: 13px;
 }
 .parent .question label::after{
     content: '+';
-    background:#283C5A;
+    background:white;
     position: absolute;
     right: 300px;
     font-size: 30px;
     color:  rgb(0, 0, 0,0.1);;
-    color: white;
+    color: #283C5A;
     width: 34px;
     transition: transfrom 1s;
     text-align: center;
-    margin-top: 11px;
 
 }
 .question:hover label::after{
-    color: red;
+    color: #D4112D;
 }
 input:checked ~ label::after{
     transform: rotate(135deg);
@@ -121,4 +121,5 @@ input:checked ~ .content{
 .content p{
     font-family:Arial, Helvetica, sans-serif;
     color: #333;
+    margin-top: 10px
 }

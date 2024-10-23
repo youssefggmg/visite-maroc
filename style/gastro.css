@@ -118,6 +118,17 @@ body{
     .end , .border-b{
         display: none;
     }
+    /* the next lines is for the reversed cardes */
+    .reverse{
+        display: flex;
+        flex-direction: column !important;
+        & .text-entree{
+            margin-right: 0px !important;
+            margin-top: 0px !important;
+        }
+    }
+    /* for some reason I don't get the resolts that I want unless I add the !important */
+
 }
 
 .border-b{

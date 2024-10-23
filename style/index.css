@@ -114,3 +114,67 @@
     font-weight: 500;
   }
 }
+
+/* ville section */
+
+.villes {
+  & h1 {
+    margin-top: 20px;
+    text-align: center;
+    padding-block: 20px;
+    font-size: 2.5rem;
+    color: #283c5a;
+  }
+
+  & p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #283c5a;
+    font-weight: bold;
+    margin-inline: 200px;
+    margin-bottom: 50px;
+  }
+
+  & .img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    & .right {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      & img {
+        width: 300px;
+        height: 280px;
+      }
+    }
+    & .left {
+      & img {
+        width: 300px;
+        height: 580px;
+      }
+    }
+  }
+
+  #img-container-bottom {
+    margin-top: 10px;
+  }
+}
+
+.border-line-bottom {
+  margin-block: 50px;
+  border-bottom: 2px solid black;
+}
+
+/* football-event */
+
+.football-event {
+  & h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    padding-block: 20px;
+    color: #283c5a;
+  }
+}

@@ -44,82 +44,110 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 110vh;
-    background: #f6f7f6;
+    min-height: 100vh;
+    background: #f5f8ff;
 }
 
 .parent{
-    max-width: 700px;
+    margin: 0 40px;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     gap: 20px;
 
 }
 .parent h1{
-    color: #353535;
+    color: #333;
 }
 .parent .question{
+    position: relative;
     background: #fff;
-    padding: 10px 20px 20px;
+    padding: 0px 20px 20px;
     box-shadow: 0 15px 25px rgb(0, 0, 0,0.05);
     border-radius: 5px;
-    
+    overflow: hidden;
+
 }
-.parent input{
+.parent .question input{
     appearance: none;
 }
 .parent .question label{
     display: flex;
-    align-items: center;    
+    align-items: center;
     cursor: pointer;
-    margin-top: 13px;
 }
 .parent .question label::after{
     content: '+';
-    background:white;
     position: absolute;
-    right: 300px;
-    font-size: 30px;
+    right: 20px;
+    font-size: 2em;
     color:  rgb(0, 0, 0,0.1);;
-    color: #283C5A;
-    width: 34px;
     transition: transfrom 1s;
-    text-align: center;
-
 }
-.question:hover label::after{
-    color: #D4112D;
+.parent .question:hover label::after{
+    color: #333;
 }
-input:checked ~ label::after{
+.parent .question input[type="radio"]:checked ~ label::after{
     transform: rotate(135deg);
 }
-.parent h2{
+.parent .question h2{
     width: 40px;
     height: 40px;
-    background-color: #D4112D;
+    background: linear-gradient(135deg, #e73c3c, #ff6a6a);
     display: flex;
     justify-content: center;
     align-items: center;
     color: #f5f8f5;
-    font-size: 24px;
+    font-size: 1.25em;
     border-radius: 5px;
     margin-right: 10px;
 }
-.parent h3{
-    font-weight: 500;
+.parent .question h3{
+    position: relative;
+    font-weight: 600;
     color: #333;
+    z-index: 10;
 
 }
 .content{
     max-height: 0;
-    transition: 1s;
+    transition: transform 1s;
     overflow: hidden;
 }
-input:checked ~ .content{
+input[type="radio"]:checked ~ .content{
     max-height: 100vh;
 }
 .content p{
-    font-family:Arial, Helvetica, sans-serif;
+    position: relative;
+    padding: 10px 0;
     color: #333;
-    margin-top: 10px
+    z-index: 10;
+}
+.parent .question input[type="radio"]:checked ~ label h2
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 8em;
+    justify-content: end;
+    padding: 20px;
+}
+.contact-mail {
+    font-size: 18px;
+    color: #000;
+    text-align: center;
+    background: #f5f8ff;
+    padding: 14px;
+}
+
+a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }

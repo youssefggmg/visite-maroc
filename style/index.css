@@ -90,6 +90,7 @@
   padding: 30px;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
+  transition: 0.5s;
 
   & .element {
     display: flex;
@@ -115,6 +116,22 @@
   }
 }
 
+@media (width < 800px) {
+  .line-status {
+    gap: 20px;
+
+    & .element {
+      font-size: 1rem;
+      transition: 0.4s;
+    }
+
+    & .Title {
+      font-size: 2rem;
+      transition: 0.4s;
+    }
+  }
+}
+
 /* ville section */
 
 .villes {
@@ -124,6 +141,7 @@
     padding-block: 20px;
     font-size: 2.5rem;
     color: #283c5a;
+    transition: 0.5s;
   }
 
   & p {
@@ -133,6 +151,7 @@
     font-weight: bold;
     margin-inline: 200px;
     margin-bottom: 50px;
+    transition: 0.5s;
   }
 
   & .img-container {
@@ -140,6 +159,8 @@
     align-items: center;
     justify-content: center;
     gap: 12px;
+    flex-wrap: wrap;
+    transition: 0.5s;
 
     & .right {
       display: flex;
@@ -148,18 +169,73 @@
       & img {
         width: 300px;
         height: 280px;
+        transition: 0.5s;
       }
     }
     & .left {
       & img {
         width: 300px;
         height: 580px;
+        transition: 0.5s;
       }
     }
   }
 
   #img-container-bottom {
     margin-top: 10px;
+  }
+}
+
+@media (width < 800px) {
+  .villes {
+    & h1 {
+      font-size: 2.2rem;
+    }
+
+    & p {
+      font-size: 1.2rem;
+      margin-inline: 100px;
+    }
+
+    & .img-container {
+      & .right {
+        & img {
+          width: 250px;
+          height: 240px;
+        }
+      }
+      & .left {
+        & img {
+          width: 250px;
+          height: 490px;
+        }
+      }
+    }
+  }
+}
+@media (width < 690px) {
+  .villes {
+    & h1 {
+      font-size: 2rem;
+    }
+
+    & p {
+      font-size: 1rem;
+    }
+    & .img-container {
+      & .right {
+        & img {
+          width: 200px;
+          height: 205px;
+        }
+      }
+      & .left {
+        & img {
+          width: 200px;
+          height: 430px;
+        }
+      }
+    }
   }
 }
 
@@ -176,5 +252,322 @@
     text-align: center;
     padding-block: 20px;
     color: #283c5a;
+    margin-bottom: 30px;
+    transition: 0.5s;
+  }
+
+  & span {
+    border-bottom: #d4112d 2px solid;
+  }
+
+  & .card {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+
+    & .left {
+      & img {
+        width: 300px;
+        height: 300px;
+        transition: 0.5s;
+      }
+    }
+
+    & .right {
+      margin-top: 10px;
+      & h2 {
+        font-size: 2rem;
+        color: #d4112d;
+        font-weight: bold;
+        margin-bottom: 10px;
+        transition: 0.5s;
+      }
+
+      & p {
+        font-size: 1.2rem;
+        font-weight: 500;
+        width: 400px;
+        line-height: 50px;
+        font-weight: bold;
+        transition: 0.5s;
+      }
+    }
+  }
+
+  & #border-bottom-red {
+    margin-block: 30px;
+    border-bottom: #d4112d 5px solid;
+    width: 200px;
+    margin-left: 18.3%;
+  }
+}
+
+@media (width < 800px) {
+  .football-event {
+    & h1 {
+      font-size: 1.8rem;
+    }
+
+    & .card {
+      gap: 10px;
+      flex-wrap: wrap;
+      & .left {
+        & img {
+          width: 200px;
+          height: 200px;
+        }
+      }
+
+      & .right {
+        & h2 {
+          font-size: 1.3rem;
+        }
+
+        & p {
+          font-size: 1rem;
+          line-height: 30px;
+        }
+      }
+    }
+
+    & #border-bottom-red {
+      margin-left: 11.2% !important;
+    }
+  }
+}
+
+@media (width < 650px) {
+  .football-event {
+    & h1 {
+      font-size: 1.5rem;
+    }
+
+    & .card {
+      gap: 10px;
+      flex-wrap: wrap;
+      & .left {
+        & img {
+          width: 200px;
+          height: 200px;
+        }
+      }
+
+      & .right {
+        & h2 {
+          font-size: 1.3rem;
+        }
+
+        & p {
+          font-size: 0.7rem;
+          line-height: 30px;
+        }
+      }
+    }
+
+    & #border-bottom-red {
+      margin-left: 3px !important;
+    }
+  }
+}
+
+@media (width < 1030px) {
+  .football-event {
+    & #border-bottom-red {
+      margin-left: 10.3% !important;
+    }
+  }
+}
+@media (width < 900px) {
+  .football-event {
+    & #border-bottom-red {
+      margin-left: 5.2% !important;
+    }
+  }
+}
+
+/* navigation */
+
+.navigation {
+  & h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    padding-block: 20px;
+    color: #283c5a;
+    margin-bottom: 30px;
+    transition: 0.4s;
+  }
+
+  & .images-container {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+
+    & img {
+      width: 270px;
+      height: 480px;
+      transition: 0.4s;
+
+      &:hover {
+        scale: 1.03;
+      }
+    }
+  }
+
+  & .border-red-bottom {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-bottom: #d4112d 2px solid;
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  & .links {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 4rem;
+    margin-right: 1.5rem;
+
+    & a {
+      font-size: 1.5rem;
+      font-weight: 400;
+      transition: 0.4s;
+
+      &:hover {
+        scale: 1.03;
+      }
+    }
+  }
+}
+
+@media (width < 1030px) {
+  .navigation {
+    & .images-container {
+      gap: 50px;
+    }
+
+    & .border-red-bottom {
+      display: none;
+    }
+
+    & .links {
+      display: none;
+    }
+  }
+}
+
+@media (width < 940px) {
+  .navigation {
+    & .images-container {
+      & img {
+        width: 220px;
+        height: 400px;
+        transition: 0.4s;
+      }
+    }
+  }
+}
+
+@media (width < 800px) {
+  .navigation {
+    & h1 {
+      font-size: 1.8rem;
+    }
+
+    & .images-container {
+      gap: 50px;
+
+      & img {
+        width: 180px;
+        height: 360px;
+        transition: 0.4s;
+
+        &:hover {
+          scale: 1.03;
+        }
+      }
+    }
+
+    & .border-red-bottom {
+      display: none;
+    }
+
+    & .links {
+      display: none;
+    }
+  }
+}
+@media (width < 660px) {
+  .navigation {
+    & h1 {
+      font-size: 1.6rem;
+    }
+
+    & .images-container {
+      gap: 30px;
+
+      & img {
+        width: 150px;
+        height: 320px;
+        transition: 0.4s;
+
+        &:hover {
+          scale: 1.03;
+        }
+      }
+    }
+  }
+}
+
+/* our team */
+
+.our-team {
+  margin-bottom: 70px;
+  & h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    padding-block: 20px;
+    color: #283c5a;
+    margin-bottom: 30px;
+  }
+
+  & .cards-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    color: #fff;
+    margin-bottom: 20px;
+
+    & .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+      align-items: center;
+      width: 200px;
+      height: 220px;
+
+      & h2 {
+        font-size: 1rem;
+      }
+
+      & p {
+        font-size: 0.8rem;
+        background-color: #283c5a;
+        padding: 5px 10px;
+      }
+    }
+  }
+
+  & .light-blue {
+    background-color: #4b80cd;
+  }
+  & .dark-blue {
+    background-color: #283c5a;
+  }
+
+  & .light-btn {
+    background-color: #4b80cd !important;
   }
 }

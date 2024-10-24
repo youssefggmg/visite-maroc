@@ -52,7 +52,7 @@ nav {
     }
   }
 
-  & #h-menu {
+  & .h-menu {
     font-size: 1.7rem;
     display: none;
 
@@ -80,7 +80,7 @@ nav {
 
       background-color: #ffffffc5;
     }
-    & #h-menu {
+    & .h-menu {
       display: block;
     }
   }

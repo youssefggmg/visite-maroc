@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./style/index.css" />
     <link rel="shortcut icon" href="./img/logo-vm.png" type="image/x-icon" />
   </head>
+
   <body>
     <!-- Header section -->
     <header>
@@ -21,25 +22,25 @@
           <img src="./img/logo-vm.png" alt="logo" />
         </a>
 
-        <div class="links">
-          <a href="#">Home</a>
-          <a href="#">Destinations</a>
-          <a href="#">Gastronomie</a>
-          <a href="#">FAQ</a>
-          <button>log in</button>
-        </div>
-
         <input type="checkbox" id="menu-toggle" />
         <label for="menu-toggle" id="h-menu" class="fa-solid fa-bars"></label>
 
-        <div class="links-mobile">
-          <a href="#">Home</a>
-          <a href="#">Destinations</a>
-          <a href="#">Gastronomie</a>
-          <a href="#">FAQ</a>
+        <div class="links">
+          <span class="to-one-line">
+            <a href="./index.html">Home</a>
+            <label
+              for="menu-toggle"
+              id="h-menu"
+              class="fa-solid fa-close"
+            ></label>
+          </span>
+          <a href="./html/destination.html">Destinations</a>
+          <a href="./html/gastro.html">Gastronomie</a>
+          <a href="./html/FAQ.html">FAQ</a>
           <button>log in</button>
         </div>
       </nav>
+
       <section class="hero">
         <div class="hero-text">
           <h1>Découvrez le <span>Maroc</span></h1>
@@ -52,11 +53,174 @@
       </section>
     </header>
 
-    <!-- line section -->
+    <!-- line-status section -->
 
-    <section class="line"></section>
+    <section class="line-status">
+      <div class="element">
+        <span class="Title">+250</span>
+        <span class="text-line">Circuits attractifs à travers le Maroc</span>
+      </div>
+      <div class="element">
+        <span class="Title">+1,1M</span>
+        <span class="text-line">Clients du monde entier</span>
+      </div>
+      <div class="element">
+        <span class="Title">4.2</span>
+        <span>
+          <div>
+            <img src="./img/star.png" alt="STAR" />
+            <img src="./img/star.png" alt="STAR" />
+            <img src="./img/star.png" alt="STAR" />
+            <img src="./img/star.png" alt="STAR" />
+            <img src="./img/star.png" alt="STAR" />
+          </div>
+          <p>Sur Tripadvisor</p>
+        </span>
+      </div>
+      <div class="element">
+        <span class="Title">+98%</span>
+        <span class="text-line">Circuits attractifs à travers le Maroc</span>
+      </div>
+    </section>
 
-    <!-- Main Section -->
+    <!-- villes -->
+
+    <section class="villes">
+      <h1>Explorez les Villes Incontournables</h1>
+      <p>
+        Découvrez les destinations phares, riches en culture, histoire et
+        paysages à couper le souffle, pour un voyage inoubliable.
+      </p>
+
+      <div class="img-container">
+        <div class="right">
+          <img src="./img/marrackech 1.png" alt="marrackech ville" />
+          <img src="./img/tangier 1.png" alt="tangier ville" />
+        </div>
+        <div class="left">
+          <img src="./img/chefchaouen 2.png" alt="chefchaouen ville" />
+        </div>
+      </div>
+      <div class="img-container" id="img-container-bottom">
+        <div class="left">
+          <img src="./img/rabat 1.png" alt="rabat ville" />
+        </div>
+        <div class="right">
+          <img src="./img/marrackech 1.png" alt="marrackech ville" />
+          <img src="./img/laso-imago.png" alt="laso ville" />
+        </div>
+      </div>
+    </section>
+
+    <div class="border-line-bottom"></div>
+
+    <!-- football-event Section -->
+
+    <section class="football-event">
+      <h1>Premier Destination for <span>Global Football Events</span></h1>
+
+      <div class="card">
+        <div class="left">
+          <img src="./img/world-cup.png" alt="event-ball" />
+        </div>
+
+        <div class="right">
+          <h2>Coupe de Monde</h2>
+          <p>
+            Morocco will host the 2030 World Cup, offering fans a mix of
+            thrilling football and rich cultural experiences, from historic
+            cities to stunning landscapes and modern stadiums.
+          </p>
+        </div>
+      </div>
+
+      <div id="border-bottom-red"></div>
+
+      <div class="card">
+        <div class="left">
+          <img src="./img/cup-afriqua.png" alt="event-ball" />
+        </div>
+
+        <div class="right">
+          <h2>Coupe de D’Afrique</h2>
+          <p>
+            In 2025, Morocco will welcome the African Cup of Nations, showcasing
+            top African teams and offering visitors a chance to explore its
+            vibrant cities, markets, and beautiful coastlines.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="border-line-bottom"></div>
+
+    <!-- navigation to other pages -->
+
+    <section class="navigation">
+      <h1>Navigate Our Site: Quick Links to Explore</h1>
+
+      <div class="images-container">
+        <a href="#"><img src="./img/direction 1.png" alt="direction" /></a>
+        <a href="#"
+          ><img src="./img/lhmbr9ou9 1.png" alt="meal with barkouk"
+        /></a>
+        <a href="#"><img src="./img/faq.png" alt="faq image" /></a>
+      </div>
+
+      <div class="border-red-bottom"></div>
+
+      <div class="links">
+        <a href="#">Destinations</a><a href="#">Gastronomie</a
+        ><a href="#">FAQ</a>
+      </div>
+    </section>
+
+    <div class="border-line-bottom"></div>
+
+    <!-- our team -->
+
+    <section class="our-team">
+      <h1>Meet Our Team</h1>
+
+      <div class="cards-wrapper">
+        <div class="card light-blue">
+          <div class="img-wrapper">
+            <img src="./img/rabeh.png" alt="team-member rabeh" />
+          </div>
+          <h2>Abderrahmane Rabeh</h2>
+          <p>Developer</p>
+        </div>
+        <div class="card dark-blue">
+          <div class="img-wrapper">
+            <img src="./img/youssef.png" alt="team-member youssef" />
+          </div>
+          <h2>Youssef Elhoubi</h2>
+          <p class="light-btn">Scrum master</p>
+        </div>
+        <div class="card light-blue">
+          <div class="img-wrapper">
+            <img src="./img/alouan.png" alt="team-member alouane" />
+          </div>
+          <h2>Fatima-Ezzahra Alouane</h2>
+          <p>Developer</p>
+        </div>
+        <div class="card dark-blue">
+          <div class="img-wrapper">
+            <img src="./img/achraf.png" alt="team-member achraf" />
+          </div>
+          <h2>Achraf</h2>
+          <p class="light-btn">Developer</p>
+        </div>
+
+        <div class="card light-blue">
+          <div class="img-wrapper">
+            <img src="./img/malika.png" alt="team-member malika" />
+          </div>
+          <h2>Malika El Abiad</h2>
+          <p>Developer</p>
+        </div>
+      </div>
+    </section>
 
     <!-- Footer Section -->
 

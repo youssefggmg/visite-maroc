@@ -2,10 +2,9 @@
 
 *{
     font-family: 'Inter';
-}
-body{
     box-sizing: border-box;
 }
+
 .hero{
     background-image: url(/img/Tajine1.png);
     background-position: center;

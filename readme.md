@@ -8,7 +8,7 @@
 
 ## 🎯 Objectifs Principaux
 - **Créer une plateforme intuitive et attrayante** qui facilite la découverte des richesses touristiques du Maroc.
-- **Assurer une expérience utilisateur optimale** sur tous les types d'appareils (desktop, mobile, tablette).
+- **Assurer une expérience utilisateur optimale** sur tous les types d'appareils (desktop, mobile).
 - **Respecter les normes d'accessibilité et de SEO** pour maximiser la visibilité et l'inclusivité du site.
   
 ---

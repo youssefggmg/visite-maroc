@@ -242,3 +242,13 @@ input[type="radio"][id="page-2"]:checked ~ .page2 {
     margin-bottom: 70px;
   }
 }
+
+@media only screen and (max-width: 767px){
+    .place-card{
+        flex-direction: column;
+        gap: 10px;
+    }
+    & .place-content{
+        width: 66%;
+    }
+}

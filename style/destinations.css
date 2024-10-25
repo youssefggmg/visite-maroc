@@ -85,8 +85,9 @@ h3 {
 }
 
 .best-places {
-  padding: 0 20px;
-  text-align: center;
+    background: url(../img/patternpad-2024-10-24-11-06-07.svg);
+    padding: 0 20px;
+    text-align: center;
 }
 
 .places-container {
@@ -240,4 +241,14 @@ input[type="radio"][id="page-2"]:checked ~ .page1 {
   & .page1 {
     margin-bottom: 70px;
   }
+}
+
+@media only screen and (max-width: 767px){
+    .place-card{
+        flex-direction: column;
+        gap: 10px;
+    }
+    & .place-content{
+        width: 66%;
+    }
 }

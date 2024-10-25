@@ -45,6 +45,13 @@ footer {
         & a {
           border-bottom: #fff 2px solid;
           margin-bottom: 5px;
+          cursor: pointer;
+          transition: 0.5s;
+
+          &:hover {
+            scale: 0.98;
+            color: #d4112d;
+          }
         }
       }
     }
@@ -98,7 +105,7 @@ footer {
         }
         & p {
           font-size: 1rem;
-          width: 400px;
+          width: 100%;
           line-height: 40px;
         }
       }

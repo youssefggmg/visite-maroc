@@ -1,87 +1,87 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter";
 }
 
 .hero-section {
-    position: relative;
-    height: 70vh;
-    background-image: url('../img/tradit.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    margin-bottom: 20px;
+  position: relative;
+  height: 70vh;
+  background-image: url("../img/tradit.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .hero-content {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 
 .hero-content h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
 .hero-content p {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
-.links{
-    display: flex;
-    justify-content: center;
-    font-size: 20px;
-    color: #283C5A;
-    height: 20px;
-    font-weight: bold;
-    & .fleche{
-        padding-left: 20px;
-    }
-    & .dest{
-        padding-left: 20px;
-        color: #D4112D;
-    }
-    & a{
-        text-decoration: none;
-        color: inherit; 
-    }
+.links-des {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  color: #283c5a;
+  height: 20px;
+  font-weight: bold;
+  & .fleche {
+    padding-left: 20px;
+  }
+  & .dest {
+    padding-left: 20px;
+    color: #d4112d;
+  }
+  & a {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 
 .description {
-        margin: 16px;
-        font-size:  18px;
-        text-align: center;
-        color: #000000;
-        font-weight: medium;
+  margin: 16px;
+  font-size: 18px;
+  text-align: center;
+  color: #000000;
+  font-weight: medium;
 
-    & .dests{
-        color: #D4112D;
-    }
+  & .dests {
+    color: #d4112d;
+  }
 }
 
-h3{
-    margin-left: 40px;
-    color: #283C5A;
-    font-size: 35px;
-    font-weight: bold;
+h3 {
+  margin-left: 40px;
+  color: #283c5a;
+  font-size: 35px;
+  font-weight: bold;
 }
 
 .best-places {
@@ -91,97 +91,165 @@ h3{
 }
 
 .places-container {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .place-card {
-    display: flex;
-    gap: 20px;
-    border-radius: 10px;
-    overflow: hidden;
-    margin: 20px;
-    align-items: center;
-    text-align: left;
+  display: flex;
+  gap: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px;
+  align-items: center;
+  text-align: left;
 }
 
 .place-card img {
-    width: 480px;
-    height: 300px;
-    border-radius: 50px;
-    object-fit: cover;
+  width: 480px;
+  height: 300px;
+  border-radius: 50px;
+  object-fit: cover;
 }
 
 .place-content {
-    padding: 20px;
-    background-color: #f9f9f9;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 25px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
 }
 
 .place-content h4 {
-    color: #D4112D;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+  color: #d4112d;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 
 .place-content p {
-    color: #000000;
-    font-size: 1rem;
-    margin-bottom: 20px;
+  color: #000000;
+  font-size: 1rem;
+  margin-bottom: 20px;
 }
 
 .btn {
-    background-color: #D4112D;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 20px;
-    text-decoration: none;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
+  background-color: #d4112d;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
 }
-.center-btn{
-    text-align: center;
+.center-btn {
+  text-align: center;
 }
 
 .btn:hover {
-    background-color: #FC3C58;
+  background-color: #fc3c58;
 }
 
 .reverse {
-    display: flex;
-    flex-direction: row-reverse;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .pagination {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
 }
 
 .center-pagination {
-    text-align: center;
+  text-align: center;
 }
 
 .pagination li {
-    display: inline-block;
-    margin: 0 10px;
+  display: inline-block;
+  margin: 0 10px;
 }
 
 .pagination li a:hover {
-    background-color: #A9A9A9;
-    padding: 10px 15px;
-    border-radius: 50px;
+  background-color: #a9a9a9;
+  padding: 10px 15px;
+  border-radius: 50px;
 }
 
 .pagination li a.active {
-    background-color: #D4112D;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 50px;
+  background-color: #d4112d;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50px;
 }
 
 .pagination li a.active:hover {
-    background-color: #FC3C58;
+  background-color: #fc3c58;
+}
+
+/* pagination */
+
+label {
+  transition: 0.5s;
+
+  &:hover {
+    background-color: #a9a9a9;
+    padding: 6px 12px;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]:checked + label {
+  background-color: #d4112d;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 50px;
+}
+
+input[type="radio"][id="page-1"]:checked ~ .page1 {
+  display: none;
+}
+input[type="radio"][id="page-2"]:checked ~ .page2 {
+  display: none;
+}
+
+.pagination-list {
+  margin-bottom: 20px;
+  position: relative;
+  height: auto;
+
+  & .absolute {
+    position: absolute;
+    bottom: -40px;
+  }
+
+  & .label-1 {
+    left: 35rem;
+  }
+  & .label-2 {
+    left: 38rem;
+  }
+  & .label-3 {
+    left: 41rem;
+  }
+
+  & .page2,
+  & .page1 {
+    margin-bottom: 70px;
+  }
+}
+
+@media only screen and (max-width: 767px){
+    .place-card{
+        flex-direction: column;
+        gap: 10px;
+    }
+    & .place-content{
+        width: 66%;
+    }
 }

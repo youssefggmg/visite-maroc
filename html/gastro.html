@@ -1,55 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gastronomie</title>
-    <link rel="stylesheet" href="/style/gastro.css">
-    <link rel="stylesheet" href="/style/header.css">
-    <link rel="stylesheet" href="/style/footer.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-</head>
+    <link rel="stylesheet" href="../style/gastro.css" />
+    <link rel="stylesheet" href="../style/header.css" />
+    <link rel="stylesheet" href="../style/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
 
-<body>
+  <body>
     <!-- Header section -->
     <header>
-        <nav>
-            <a href="./index.html" class="logo">
-                <img src="../img/logo-vm.png" alt="logo" />
-            </a>
-
-            <div class="links">
-                <a href="#">Home</a>
-                <a href="#">Destinations</a>
-                <a href="#">Gastronomie</a>
-                <a href="#">FAQ</a>
-                <button>log in</button>
-            </div>
-
-            <input type="checkbox" id="menu-toggle" />
-            <label for="menu-toggle" id="h-menu" class="fa-solid fa-bars"></label>
-
-            <div class="links-mobile">
-                <a href="#">Home</a>
-                <a href="#">Destinations</a>
-                <a href="#">Gastronomie</a>
-                <a href="#">FAQ</a>
-                <button>log in</button>
-            </div>
+      <nav>
+          <a href="../index.html" class="logo">
+            <img src="../img/logo-vm.png" alt="logo" />
+          </a>
+  
+          <input type="checkbox" id="menu-toggle" />
+          <label for="menu-toggle"  class="fa-solid fa-bars h-menu"></label>
+  
+          <div class="links">
+            <span class="to-one-line">
+              <a href="../index.html">Home</a>
+              <label
+                for="menu-toggle"
+                
+                class="fa-solid fa-close h-menu"
+              ></label>
+            </span>
+            <a href="./destination.html">Destinations</a>
+            <a href="./gastro.html">Gastronomie</a>
+            <a href="./FAQ.html">FAQ</a>
+            <button>log in</button>
+          </div>
         </nav>
-
-    </header>
+  </header>
     <!-- Hero Section -->
     <section class="hero">
-        <div class="heroFood">
-            <h1>GASTRONOMIE</h1>
-        </div>
+      <div class="heroFood">
+        <h1>GASTRONOMIE</h1>
+      </div>
     </section>
     <!-- section2 -->
     <section>
-        <div class="links">
-            <p><a href="">Accueil</a></p>
+        <div class="links-des">
+            <p><a href="../index.html">Accueil</a></p>
             <p class="fleche"> ▶ </p>
             <p class="gastro"><a href="">Gastronomie</a></p>
         </div>
@@ -102,16 +102,16 @@
             </div>
         </div>
         <div class="border-b end"></div>
-        <h3>Pâtisserie</h3>
         <div class="entree">
             <div class="image-entree">
                 <img src="/img/Pastilla.png" alt="Pastilla">
             </div>
             <div class="text-entree">
-                <h2>Chebakia</h2>
-                <p>La Chebakia, l’un des délices emblématiques du Maroc, est sans doute le gâteau le plus prisé et
-                    consommé à travers le pays. Que ce soit en accompagnement de la soupe marocaine ou servi avec du
-                    thé, elle occupe une place centrale, notamment pendant le mois sacré du Ramadan.</p>
+                <h2>La Pastilla</h2>
+                <p>La pastilla est un plat traditionnel du Maghreb, constitué d'une sorte de feuilleté de « feuille »
+                    qui se dit ouarka, à base d'oignon, de pigeons (ou de poulet, de pintade, ou encore, plus récemment,
+                    de fruits de mer), de persil, de coriandre, d'œuf dur et d'amandes, mélange de sucré et de salé,
+                    parfumé à la cannelle. Elle est souvent servie lors des fêtes, juste avant le plat principal.</p>
             </div>
         </div>
         <div class="border-b"></div>
@@ -128,6 +128,7 @@
             </div>
         </div>
         <div class="border-b end"></div>
+        <h3>Pâtisserie</h3>
         <div class="entree">
             <div class="image-entree">
                 <img src="/img/Cornes-de-gazelle.png" alt="Pastilla">
@@ -140,49 +141,59 @@
                     font partie intégrante de l’art de vivre marocain.</p>
             </div>
         </div>
-
+        <div class="border-b "></div>
+        <div class="entree reverse">
+            <div class="image-entree">
+                <img src="/img/Chebakia.png" alt="R'fissa">
+            </div>
+            <div class="text-entree">
+                <h2>Chebakia</h2>
+                <p>La Chebakia, l’un des délices emblématiques du Maroc, est sans doute le gâteau le plus prisé et
+                    consommé à travers le pays. Que ce soit en accompagnement de la soupe marocaine ou servi avec du
+                    thé, elle occupe une place centrale, notamment pendant le mois sacré du Ramadan.</p>
+            </div>
+        </div>
 
     </section>
     <!-- Footer Section -->
 
     <footer>
-        <div class="up">
-            <div class="right">
-                <h1>VisitMorocco</h1>
-                <p>
-                    Discover Morocco: Your guide to breathtaking landscapes, rich
-                    culture, and unforgettable adventures.
-                </p>
-            </div>
-            <div class="middle">
-                <h1>Links</h1>
-                <div>
-                    <a href="#">FAQ</a>
-                    <a href="#">Gastronomie</a>
-                    <a href="#">Destinations</a>
-                </div>
-            </div>
-            <div class="left">
-                <h1>Network</h1>
-                <div class="element">
-                    <i class="fa-solid fa-phone"></i>
-                    <span>055676465</span>
-                </div>
-                <div class="element">
-                    <i class="fa-regular fa-envelope"></i>
-                    <span>vmaroc@gmail.com</span>
-                </div>
-                <div class="element">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <span>Safi, youcode</span>
-                </div>
-            </div>
+      <div class="up">
+        <div class="right">
+          <h1>VisitMorocco</h1>
+          <p>
+            Discover Morocco: Your guide to breathtaking landscapes, rich
+            culture, and unforgettable adventures.
+          </p>
         </div>
+        <div class="middle">
+          <h1>Links</h1>
+          <div>
+            <a href="#">FAQ</a>
+            <a href="#">Gastronomie</a>
+            <a href="#">Destinations</a>
+          </div>
+        </div>
+        <div class="left">
+          <h1>Network</h1>
+          <div class="element">
+            <i class="fa-solid fa-phone"></i>
+            <span>055676465</span>
+          </div>
+          <div class="element">
+            <i class="fa-regular fa-envelope"></i>
+            <span>vmaroc@gmail.com</span>
+          </div>
+          <div class="element">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Safi, youcode</span>
+          </div>
+        </div>
+      </div>
 
-        <div class="down">
-            <p>Copyright © 2024 Adventurist By CodeChogun. All Rights Reserved</p>
-        </div>
+      <div class="down">
+        <p>Copyright © 2024 Adventurist By CodeChogun. All Rights Reserved</p>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>

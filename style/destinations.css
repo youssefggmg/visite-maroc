@@ -251,4 +251,26 @@ input[type="radio"][id="page-2"]:checked ~ .page2 {
     & .place-content{
         width: 66%;
     }
+    .description{
+      width: 63%;
+      margin: 1em auto;
+    }
+    .pagination-list {
+      & .label-1 {
+          left: 50%;
+          transform: translateX(-50%);
+      }
+  }
+    .pagination-list {
+      & .label-2 {
+          left: 55%;
+          transform: translateX(-50%);
+      }
+  }
+    .pagination-list {
+      & .label-3 {
+          left: 60%;
+          transform: translateX(-50%);
+      }
+  }
 }

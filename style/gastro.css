@@ -1,89 +1,80 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap");
 
-* {
-    font-family: "Inter";
-}
-
-body {
+*{
+    font-family: 'Inter';
     box-sizing: border-box;
 }
 
-.hero {
-    background-image: url(../img/Tajine1.png);
+.hero{
+    background-image: url(/img/Tajine1.png);
     background-position: center;
     object-fit: cover;
     background-size: cover;
     background-repeat: no-repeat;
     height: 50vh;
     background-size: cover;
-
-    & .heroFood {
+    & .heroFood{
         display: flex;
         justify-content: center;
         color: white;
 
-        & h1 {
+        & h1{
             text-align: center;
             font-size: 96px;
         }
     }
+    
 }
 
-.links-des {
+.links-des{
     display: flex;
     justify-content: center;
     font-size: 20px;
-    color: #283c5a;
+    color: #283C5A;
     height: 40px;
     font-weight: bold;
-
-    & .fleche {
+    & .fleche{
         padding-left: 20px;
     }
-
-    & .gastro {
+    & .gastro{
         padding-left: 20px;
-        color: #d4112d;
+        color: #D4112D;
     }
-
-    & a {
+    & a{
         text-decoration: none;
-        color: inherit;
+        color: inherit; 
     }
 }
 
 .description {
-    margin: 16px;
-    font-size: 18px;
-    text-align: center;
-    color: #000000;
-    font-weight: medium;
-    margin-left: 40px;
+        margin: 16px;
+        font-size:  18px;
+        text-align: center;
+        color: #000000;
+        font-weight: medium;
+        margin-left: 40px;
 
-    & .cuisine {
-        color: #d4112d;
+    & .cuisine{
+        color: #D4112D;
     }
 }
-
-.food {
-    & h3 {
+.food{
+    & h3{
         margin-left: 40px;
-        color: #283c5a;
+        color: #283C5A;
         font-size: 40px;
         font-weight: bold;
     }
 }
-
-.entree {
+.entree{
     display: flex;
     margin: 40px;
     position: relative;
-
-    & img {
+    
+    & img{
         width: 600px;
     }
-
-    & .text-entree {
+    & .text-entree{
         width: 60%;
         position: absolute;
         padding: 20px;
@@ -91,83 +82,79 @@ body {
         margin-left: 400px;
         margin-top: 40px;
 
-        & h1 {
+        & h1{
             font-size: 20px;
             font-weight: bold;
         }
-
-        & p {
+        & p{
             line-height: 25px;
             padding-left: 20px;
         }
     }
 }
-
-@media only screen and (width < 768px) {
-    .entree {
-        flex-direction: column;
-        gap: 2em;
-        align-items: center;
-
-        & .text-entree {
-            position: static;
-            margin-top: 0px;
-            margin-left: 0px;
-            width: 63%;
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .hero{
+    height: 35%;
+    & .heroFood{
+        & h1{
+            font-size: 70px;
         }
     }
-
-    .image-entree img {
-        width: 100%;
+}
+  .entree {
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+    & .text-entree {
+      position: static;
+      margin-top: 0px;
+      margin-left: 0px;
+      width: 63%;
     }
-
-    .image-entree,
-    .text-entree {
-        width: 70%;
-        border-radius: 50px;
-        overflow: hidden;
+  }
+  .image-entree img {
+    width: 100%;
+  }
+  .image-entree,
+  .text-entree {
+    width: 70%;
+    border-radius: 50px;
+    overflow: hidden;
+  }
+  .text-entree h2 {
+    text-align: center;
+  }
+  .end,
+  .border-b {
+    display: none;
+  }
+  /* the next lines is for the reversed cardes */
+  .reverse {
+    display: flex;
+    flex-direction: column !important;
+    & .text-entree {
+      margin-right: 0px !important;
+      margin-top: 0px !important;
     }
-
-    .text-entree h2 {
-        text-align: center;
-    }
-
-    .end,
-    .border-b {
-        display: none;
-    }
-
-    /* the next lines is for the reversed cardes */
-    .reverse {
-        display: flex;
-        flex-direction: column !important;
-
-        & .text-entree {
-            margin-right: 0px !important;
-            margin-top: 0px !important;
-        }
-    }
-
-    /* for some reason I don't get the resolts that I want unless I add the !important */
+  }
+  /* for some reason I don't get the resolts that I want unless I add the !important */
 }
 
-.border-b {
+.border-b{
     margin-left: 40px;
     content: "";
     width: 400px;
     border-bottom: 2px solid red;
 }
-
-.reverse {
+.reverse{
     display: flex;
     flex-direction: row-reverse;
-
-    & .text-entree {
+    & .text-entree{
         margin-right: 400px;
         margin-top: 40px;
+
     }
 }
-
-.end {
+.end{
     margin-left: 65%;
 }

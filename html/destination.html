@@ -1,5 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>Destinations</title>
+    <link rel="stylesheet" href="../style/header.css" />
+    <link rel="stylesheet" href="../style/footer.css" />
+    <link rel="stylesheet" href="../style/index.css" />
+    <link rel="stylesheet" href="../style/destinations.css" />
+    <link rel="shortcut icon" href="../img/logo-vm.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Header section -->
+    <header>
+      <nav>
+        <a href="../index.html" class="logo">
+          <img src="../img/logo-vm.png" alt="logo" />
+        </a>
+
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="fa-solid fa-bars h-menu"></label>
+
+        <div class="links">
+          <span class="to-one-line">
+            <a href="../index.html">Home</a>
+            <label for="menu-toggle" class="fa-solid fa-close h-menu"></label>
+          </span>
+          <a href="../html/destination.html">Destinations</a>
+          <a href="../html/gastro.html">Gastronomie</a>
+          <a href="../html/FAQ.html">FAQ</a>
+          <button>log in</button>
+        </div>
+      </nav>
+    </header>
+
 
 <head>
   <meta charset="UTF-8" />
@@ -24,15 +62,21 @@
       <input type="checkbox" id="menu-toggle" />
       <label for="menu-toggle" class="fa-solid fa-bars h-menu"></label>
 
-      <div class="links">
-        <span class="to-one-line">
-          <a href="../index.html">Home</a>
-          <label for="menu-toggle" class="fa-solid fa-close h-menu"></label>
-        </span>
-        <a href="../destination.html">Destinations</a>
-        <a href="../html/gastro.html">Gastronomie</a>
-        <a href="../FAQ.html">FAQ</a>
-        <button>log in</button>
+    <section>
+      <div class="links-hero">
+        <p><a href="">Accueil</a></p>
+        <p class="fleche">▶</p>
+        <p class="dest"><a href="">Destinations</a></p>
+      </div>
+      <div class="description">
+        <p>
+          Chaque <span class="dests">Destination</span> révèle un héritage
+          unique,façonné par le temps, les traditions et les personnes qui l'ont
+          habité. Explorez ces lieux authentiques où chaque coin de rue, chaque
+          bâtiment, et chaque paysage raconte une histoire fascinante, vous
+          invitant à plonger dans le passé tout en vivant le présent.
+        </p>
+
       </div>
     </nav>
   </header>
@@ -166,6 +210,7 @@
             mélange harmonieux entre culture, jardins luxuriants, et quartiers
             dynamiques au bord de l'Atlantique.
           </p>
+
           <div class="center-btn">
             <a href="#" class="btn">Lire la suite</a>
           </div>

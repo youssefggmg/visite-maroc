@@ -1,173 +1,231 @@
-@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300..700&display=swap");
 * {
-    font-family: "Inter";
-}
-
-body {
-    box-sizing: border-box;
+  font-family: 'Inter',sans-serif;
+  box-sizing: border-box;
 }
 
 .hero {
-    background-image: url(../img/Tajine1.png);
-    background-position: center;
-    object-fit: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 50vh;
-    background-size: cover;
+  background-image: url(/img/Tajine1.png);
+  background-position: center;
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  background-size: cover;
+  
 
-    & .heroFood {
-        display: flex;
-        justify-content: center;
-        color: white;
+  & .heroFood {
+    display: flex;
+    justify-content: center;
+    color: white;
 
-        & h1 {
-            text-align: center;
-            font-size: 96px;
-        }
+    & h1 {
+      text-align: center;
+      font-size: 96px;
     }
+  }
+
 }
 
 .links-des {
-    display: flex;
-    justify-content: center;
-    font-size: 20px;
-    color: #283c5a;
-    height: 40px;
-    font-weight: bold;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  color: #283C5A;
+  height: 40px;
+  font-weight: bold;
 
-    & .fleche {
-        padding-left: 20px;
-    }
+  & .fleche {
+    padding-left: 20px;
+  }
 
-    & .gastro {
-        padding-left: 20px;
-        color: #d4112d;
-    }
+  & .gastro {
+    padding-left: 20px;
+    color: #D4112D;
+  }
 
-    & a {
-        text-decoration: none;
-        color: inherit;
-    }
+  & a {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 
 .description {
-    margin: 16px;
-    font-size: 18px;
-    text-align: center;
-    color: #000000;
-    font-weight: medium;
-    margin-left: 40px;
+  margin: 16px;
+  font-size: 18px;
+  text-align: center;
+  color: #000000;
+  font-weight: medium;
+  margin-left: 40px;
 
-    & .cuisine {
-        color: #d4112d;
-    }
+  & .cuisine {
+    color: #D4112D;
+  }
 }
 
 .food {
-    & h3 {
-        margin-left: 40px;
-        color: #283c5a;
-        font-size: 40px;
-        font-weight: bold;
-    }
+  & h3 {
+    margin-left: 40px;
+    color: #283C5A;
+    font-size: 40px;
+    font-weight: bold;
+  }
 }
 
 .entree {
-    display: flex;
-    margin: 40px;
-    position: relative;
+  display: flex;
+  margin: 40px;
+  position: relative;
 
-    & img {
-        width: 600px;
+  & img {
+    width: 600px;
+  }
+
+  & .text-entree {
+    width: 60%;
+    position: absolute;
+    padding: 20px;
+    background-color: rgba(242, 242, 242, 0.77);
+    margin-left: 400px;
+    margin-top: 40px;
+
+    & h2 {
+      font-size: 30px;
+      font-weight: bold;
     }
 
-    & .text-entree {
-        width: 60%;
-        position: absolute;
-        padding: 20px;
-        background-color: rgba(242, 242, 242, 0.77);
-        margin-left: 400px;
-        margin-top: 40px;
-
-        & h1 {
-            font-size: 20px;
-            font-weight: bold;
-        }
-
-        & p {
-            line-height: 25px;
-            padding-left: 20px;
-        }
+    & p {
+      line-height: 25px;
+      padding-left: 20px;
     }
+  }
 }
 
-@media only screen and (width < 768px) {
-    .entree {
-        flex-direction: column;
-        gap: 2em;
-        align-items: center;
+@media only screen and (max-width:990px) {
+  .hero {
+    height: 35%;
 
-        & .text-entree {
-            position: static;
-            margin-top: 0px;
-            margin-left: 0px;
-            width: 63%;
+    & .heroFood {
+      & h1 {
+        font-size: 70px;
+      }
+    }
+  }
+
+  .entree {
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+
+    & .text-entree {
+      position: static;
+      margin-top: 0px;
+      margin-left: 0px;
+      width: 63%;
+    }
+
+    & .image-entree img {
+      width: 100%;
+    }
+
+    & .image-entree,
+    & .text-entree {
+      width: 90%;
+      border-radius: 50px;
+      overflow: hidden;
+    }
+
+    & .text-entree h2 {
+      text-align: center;
+    }
+  }
+
+  .end,
+  .border-b {
+    display: none;
+  }
+
+  /* the next lines is for the reversed cardes */
+  .reverse {
+    display: flex;
+    flex-direction: column !important;
+
+    & .text-entree {
+      margin-right: 0px !important;
+      margin-top: 0px !important;
+    }
+  }
+
+  /* for some reason I don't get the resolts that I want unless I add the !important */
+}
+
+@media (max-width:700px) {
+  .hero {
+    height: 35%;
+
+    & .heroFood {
+      & h1 {
+        font-size: 50px;
+      }
+    }
+  }
+
+  .description {
+    margin: 16px;
+    font-size: 15px;
+    text-align: justify;
+  }
+  .food {
+    & h3 {
+      font-size: 30px;
+    }
+  }
+  .entree {
+    & .text-entree {
+        & h2 {
+          font-size: 25px;
+          text-align: center;
         }
-    }
-
-    .image-entree img {
-        width: 100%;
-    }
-
-    .image-entree,
-    .text-entree {
-        width: 70%;
-        border-radius: 50px;
-        overflow: hidden;
-    }
-
-    .text-entree h2 {
-        text-align: center;
-    }
-
-    .end,
-    .border-b {
-        display: none;
-    }
-
-    /* the next lines is for the reversed cardes */
-    .reverse {
-        display: flex;
-        flex-direction: column !important;
-
-        & .text-entree {
-            margin-right: 0px !important;
-            margin-top: 0px !important;
+        & p{
+          font-size: 15px;
         }
+    
     }
 
-    /* for some reason I don't get the resolts that I want unless I add the !important */
+    & .image-entree img {
+      width: 100%;
+    }
+
+    & .image-entree,
+    & .text-entree {
+      width: 90%;
+      border-radius: 50px;
+      overflow: hidden;
+    }
+
+    & .text-entree h2 {
+      text-align: center;
+    }
+  }
 }
 
 .border-b {
-    margin-left: 40px;
-    content: "";
-    width: 400px;
-    border-bottom: 2px solid red;
+  margin-left: 40px;
+  content: "";
+  width: 25rem;
+  border-bottom: 2px solid red;
 }
 
 .reverse {
-    display: flex;
-    flex-direction: row-reverse;
-
-    & .text-entree {
-        margin-right: 400px;
-        margin-top: 40px;
+  display: flex;
+  flex-direction: row-reverse;
+    & .text-entree{
+      margin-right:  400px;
+      margin-top: 40px;
     }
+
 }
 
 .end {
-    margin-left: 65%;
+  margin-left: 65%;
 }

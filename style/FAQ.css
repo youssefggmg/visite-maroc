@@ -31,7 +31,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 27vh; /* Vertically centers the text in the viewport */
+    height: 27vh; 
     text-align: center;
 }
 

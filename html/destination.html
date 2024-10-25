@@ -38,14 +38,29 @@
       </nav>
     </header>
 
-    <!-- Hero section -->
-    <section class="hero-section">
-      <div class="overlay"></div>
-      <div class="hero-content">
-        <h1>Des lieux qui racontent une histoire</h1>
-        <p>Des endroits riches en culture et en patrimoine.</p>
-      </div>
-    </section>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <title>Destinations</title>
+  <link rel="stylesheet" href="../style/header.css" />
+  <link rel="stylesheet" href="../style/footer.css" />
+  <link rel="stylesheet" href="../style/index.css" />
+  <link rel="stylesheet" href="../style/destinations.css" />
+  <link rel="shortcut icon" href="./img/logo-vm.png" type="image/x-icon" />
+</head>
+
+<body>
+  <!-- Header section -->
+  <header>
+    <nav>
+      <a href="../index.html" class="logo">
+        <img src="../img/logo-vm.png" alt="logo" />
+      </a>
+
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="fa-solid fa-bars h-menu"></label>
 
     <section>
       <div class="links-hero">
@@ -61,179 +76,206 @@
           bâtiment, et chaque paysage raconte une histoire fascinante, vous
           invitant à plonger dans le passé tout en vivant le présent.
         </p>
+
       </div>
-      <h3>Meilleurs endroits</h3>
+    </nav>
+  </header>
+
+  <!-- Hero section -->
+  <section class="hero-section">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Des lieux qui racontent une histoire</h1>
+      <p>Des endroits riches en culture et en patrimoine.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="links-des">
+      <p><a href="../index.html">Accueil</a></p>
+      <p class="fleche">▶</p>
+      <p class="dest"><a href="../html/destination.html">Destinations</a></p>
+    </div>
+    <div class="description">
+      <p>
+        Chaque <span class="dests">Destination</span> révèle un héritage
+        unique,façonné par le temps, les traditions et les personnes qui l'ont
+        habité. Explorez ces lieux authentiques où chaque coin de rue, chaque
+        bâtiment, et chaque paysage raconte une histoire fascinante, vous
+        invitant à plonger dans le passé tout en vivant le présent.
+      </p>
+    </div>
+    <h3>Meilleurs endroits</h3>
+  </section>
+
+  <!-- Pagination -->
+  <div class="pagination-list">
+    <input type="radio" name="pagination" id="page-1" checked />
+    <label for="page-1" class="page-1 absolute label-1">1</label>
+    <input type="radio" name="pagination" id="page-2" />
+    <label for="page-2" class="page-2 absolute label-2">2</label>
+    <input type="radio" name="pagination" id="any" />
+    <label for="any" class="any absolute label-3">>></label>
+
+    <!-- Best places section page 1 -->
+    <section class="best-places page1">
+      <!-- Premiere carte -->
+      <div class="places-container">
+        <div class="place-card">
+          <img src="../img/marzouga.jpg" alt="Vue sur Merzouga" />
+          <div class="place-content">
+            <h4>Merzouga, la porte du désert</h4>
+            <p>
+              Merzouga est un village du désert marocain, célèbre pour ses
+              vastes dunes de sable doré, appelées l'Erg Chebbi. Destination
+              prisée pour les aventuriers, elle offre des expériences uniques
+              comme les balades à dos de chameau, les levers de soleil
+              spectaculaires et les nuits étoilées dans des camps berbères.
+            </p>
+            <div class="center-btn">
+              <a href="#" class="btn">Lire la suite</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Deuxieme carte -->
+      <div class="place-card reverse">
+        <img src="../img/mar.jpg" alt="Vue sur Marrakech" />
+        <div class="place-content">
+          <h4>Marrakech, cœur vibrant du Maroc</h4>
+          <p>
+            Marrakech, surnommée la "ville rouge", est un joyau du Maroc.
+            Connue pour ses souks animés, ses jardins luxuriants et ses
+            monuments historiques comme la Koutoubia et le Palais Bahia, elle
+            offre un mélange captivant de tradition et de modernité, attirant
+            voyageurs et aventuriers du monde entier.
+          </p>
+          <div class="center-btn">
+            <a href="#" class="btn">Lire la suite</a>
+          </div>
+        </div>
+      </div>
+      <!-- Troisieme carte -->
+      <div class="places-container">
+        <div class="place-card">
+          <img src="../img/safi.jpg" alt="Vue sur Safi">
+          <div class="place-content">
+            <h4>Safi, la perle de la poterie et de l'océan</h4>
+            <p>
+              Safi est une ville côtière marocaine réputée pour sa tradition
+              ancestrale de poterie et ses magnifiques falaises surplombant
+              l'océan Atlantique. Connue pour ses sardines et son port actif,
+              elle offre un mélange unique de culture, d'artisanat et de paysages marins spectaculaires.
+            </p>
+            <div class="center-btn">
+              <a href="#" class="btn">Lire la suite</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Pagination -->
-    <div class="pagination-list">
-      <input type="radio" name="pagination" id="page-1" checked />
-      <label for="page-1" class="page-1 absolute label-1">1</label>
-      <input type="radio" name="pagination" id="page-2" />
-      <label for="page-2" class="page-2 absolute label-2">2</label>
-      <input type="radio" name="pagination" id="any" />
-      <label for="any" class="any absolute label-3">>></label>
+    <!-- Best places section page 2 -->
 
-      <!-- Best places section page 1 -->
-      <section class="best-places page1">
-        <!-- Premiere carte -->
-        <div class="places-container">
-          <div class="place-card">
-            <img src="../img/marzouga.jpg" alt="Vue sur Merzouga" />
-            <div class="place-content">
-              <h4>Merzouga, la porte du désert</h4>
-              <p>
-                Merzouga est un village du désert marocain, célèbre pour ses
-                vastes dunes de sable doré, appelées l'Erg Chebbi. Destination
-                prisée pour les aventuriers, elle offre des expériences uniques
-                comme les balades à dos de chameau, les levers de soleil
-                spectaculaires et les nuits étoilées dans des camps berbères.
-              </p>
-              <div class="center-btn">
-                <a href="#" class="btn">Lire la suite</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Deuxieme carte -->
-        <div class="place-card reverse">
-          <img src="../img/mar.jpg" alt="Vue sur Marrakech" />
+    <section class="best-places page2">
+      <!-- Premiere carte -->
+      <div class="places-container">
+        <div class="place-card">
+          <img src="../img/casa.jpg" alt="Vue sur Casablanca" />
           <div class="place-content">
-            <h4>Marrakech, cœur vibrant du Maroc</h4>
+            <h4>Casablanca, le carrefour économique et culturel</h4>
             <p>
-              Marrakech, surnommée la "ville rouge", est un joyau du Maroc.
-              Connue pour ses souks animés, ses jardins luxuriants et ses
-              monuments historiques comme la Koutoubia et le Palais Bahia, elle
-              offre un mélange captivant de tradition et de modernité, attirant
-              voyageurs et aventuriers du monde entier.
+              Casablanca, la plus grande ville du Maroc, est le cœur
+              économique du pays. Connue pour son architecture moderne, son
+              port animé, et des sites emblématiques comme la mosquée Hassan
+              II, elle incarne un mélange dynamique entre tradition marocaine
+              et développement urbain.
             </p>
             <div class="center-btn">
               <a href="#" class="btn">Lire la suite</a>
             </div>
           </div>
         </div>
-        <!-- Troisieme carte -->
-        <div class="places-container">
-          <div class="place-card">
-            <img src="../img/safi.jpg" />
-            <div class="place-content">
-              <h4>Safi, la perle de la poterie et de l'océan</h4>
-              <p>
-                Safi est une ville côtière marocaine réputée pour sa tradition
-                ancestrale de poterie et ses magnifiques falaises surplombant
-                l'océan Atlantique. Connue pour ses sardines et son port actif,
-                elle offre un mélange unique de culture, d'artisanat et de
-                paysages marins spectaculaires.
-              </p>
-              <div class="center-btn">
-                <a href="#" class="btn">Lire la suite</a>
-              </div>
-            </div>
+      </div>
+      <!-- Deuxieme carte -->
+      <div class="place-card reverse">
+        <img src="../img/rabat.jpg" alt="Vue sur Marrakech" />
+        <div class="place-content">
+          <h4>Rabat, la capitale royale et côtière</h4>
+          <p>
+            Rabat, la capitale du Maroc, est une ville côtière alliant
+            modernité et histoire. Connue pour ses monuments emblématiques
+            comme la tour Hassan et la Kasbah des Oudayas, elle offre un
+            mélange harmonieux entre culture, jardins luxuriants, et quartiers
+            dynamiques au bord de l'Atlantique.
+          </p>
+
+          <div class="center-btn">
+            <a href="#" class="btn">Lire la suite</a>
           </div>
         </div>
-      </section>
-
-      <!-- Best places section page 2 -->
-
-      <section class="best-places page2">
-        <!-- Premiere carte -->
-        <div class="places-container">
-          <div class="place-card">
-            <img src="../img/casa.jpg" alt="Vue sur Casablanca" />
-            <div class="place-content">
-              <h4>Casablanca, le carrefour économique et culturel</h4>
-              <p>
-                Casablanca, la plus grande ville du Maroc, est le cœur
-                économique du pays. Connue pour son architecture moderne, son
-                port animé, et des sites emblématiques comme la mosquée Hassan
-                II, elle incarne un mélange dynamique entre tradition marocaine
-                et développement urbain.
-              </p>
-              <div class="center-btn">
-                <a href="#" class="btn">Lire la suite</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Deuxieme carte -->
-        <div class="place-card reverse">
-          <img src="../img/rabat.jpg" alt="Vue sur Marrakech" />
+      </div>
+      <!-- Troisieme carte -->
+      <div class="places-container">
+        <div class="place-card">
+          <img src="../img/chafchawan.jpg" alt="Vue sur chafchawan">
           <div class="place-content">
-            <h4>Rabat, la capitale royale et côtière</h4>
+            <h4>Chefchaouen, la perle bleue du Rif</h4>
             <p>
-              Rabat, la capitale du Maroc, est une ville côtière alliant
-              modernité et histoire. Connue pour ses monuments emblématiques
-              comme la tour Hassan et la Kasbah des Oudayas, elle offre un
-              mélange harmonieux entre culture, jardins luxuriants, et quartiers
-              dynamiques au bord de l'Atlantique.
+              Chefchaouen, surnommée la "ville bleue", est un joyau niché dans les montagnes du Rif.
+              Réputée pour ses ruelles peintes en bleu et son ambiance paisible, elle offre aux visiteurs
+              une atmosphère unique, entre nature, culture berbère, et artisanat traditionnel.
             </p>
             <div class="center-btn">
               <a href="#" class="btn">Lire la suite</a>
             </div>
           </div>
         </div>
-        <!-- Troisieme carte -->
-        <div class="places-container">
-          <div class="place-card">
-            <img src="../img/chafchawan.jpg" />
-            <div class="place-content">
-              <h4>Chefchaouen, la perle bleue du Rif</h4>
-              <p>
-                Chefchaouen, surnommée la "ville bleue", est un joyau niché dans
-                les montagnes du Rif. Réputée pour ses ruelles peintes en bleu
-                et son ambiance paisible, elle offre aux visiteurs une
-                atmosphère unique, entre nature, culture berbère, et artisanat
-                traditionnel.
-              </p>
-              <div class="center-btn">
-                <a href="#" class="btn">Lire la suite</a>
-              </div>
-            </div>
-          </div>
+      </div>
+    </section>
+  </div>
+  <!-- Commentaire -->
+  <!-- Footer Section -->
+
+  <footer>
+    <div class="up">
+      <div class="right">
+        <h1>VisitMorocco</h1>
+        <p>
+          Discover Morocco: Your guide to breathtaking landscapes, rich
+          culture, and unforgettable adventures.
+        </p>
+      </div>
+      <div class="middle">
+        <h1>Links</h1>
+        <div>
+          <a href="../html/FAQ.html">FAQ</a>
+          <a href="../html/gastro.html">Gastronomie</a>
+          <a href="../html/destination.html">Destinations</a>
         </div>
-      </section>
+      </div>
+      <div class="left">
+        <h1>Network</h1>
+        <div class="element">
+          <i class="fa-solid fa-phone"></i>
+          <span>055676465</span>
+        </div>
+        <div class="element">
+          <i class="fa-regular fa-envelope"></i>
+          <span>vmaroc@gmail.com</span>
+        </div>
+        <div class="element">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Safi, youcode</span>
+        </div>
+      </div>
     </div>
 
-    <!-- Footer Section -->
+    <div class="down">
+      <p>Copyright © 2024 Adventurist By CodeChogun. All Rights Reserved</p>
+    </div>
+  </footer>
+</body>
 
-    <footer>
-      <div class="up">
-        <div class="right">
-          <h1>VisitMorocco</h1>
-          <p>
-            Discover Morocco: Your guide to breathtaking landscapes, rich
-            culture, and unforgettable adventures.
-          </p>
-        </div>
-        <div class="middle">
-          <h1>Links</h1>
-          <div>
-            <a href="./FAQ.html">FAQ</a>
-            <a href="./gastro.html">Gastronomie</a>
-            <a href="./destination.html">Destinations</a>
-        </div>
-        </div>
-        <div class="left">
-          <h1>Network</h1>
-          <div class="element">
-            <i class="fa-solid fa-phone"></i>
-            <span>055676465</span>
-          </div>
-          <div class="element">
-            <i class="fa-regular fa-envelope"></i>
-            <span>vmaroc@gmail.com</span>
-          </div>
-          <div class="element">
-            <i class="fa-solid fa-location-dot"></i>
-            <span>Safi, youcode</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="down">
-        <p>Copyright © 2024 Adventurist By CodeChogun. All Rights Reserved</p>
-      </div>
-    </footer>
-  </body>
 </html>

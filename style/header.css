@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap");
+
+* {
+  font-family: "Inter";
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -12,7 +18,7 @@ nav {
 
   & .logo img {
     width: 130px;
-    height: 65 px;
+    height: 65px;
 
     transition: 0.5s;
 
@@ -30,6 +36,12 @@ nav {
 
     & a {
       font-size: 22px;
+      transition: 0.5s;
+
+      &:hover {
+        scale: 1.03;
+        color: #d4112d;
+      }
     }
 
     & button {

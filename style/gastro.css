@@ -1,160 +1,226 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap");
 
-*{
-    font-family: 'Inter';
-    box-sizing: border-box;
+* {
+  font-family: 'Inter';
+  box-sizing: border-box;
 }
 
-.hero{
-    background-image: url(/img/Tajine1.png);
-    background-position: center;
-    object-fit: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 50vh;
-    background-size: cover;
-    & .heroFood{
-        display: flex;
-        justify-content: center;
-        color: white;
+.hero {
+  background-image: url(/img/Tajine1.png);
+  background-position: center;
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  background-size: cover;
 
-        & h1{
-            text-align: center;
-            font-size: 96px;
-        }
-    }
-    
-}
-
-.links-des{
+  & .heroFood {
     display: flex;
     justify-content: center;
-    font-size: 20px;
-    color: #283C5A;
-    height: 40px;
-    font-weight: bold;
-    & .fleche{
-        padding-left: 20px;
+    color: white;
+
+    & h1 {
+      text-align: center;
+      font-size: 96px;
     }
-    & .gastro{
-        padding-left: 20px;
-        color: #D4112D;
-    }
-    & a{
-        text-decoration: none;
-        color: inherit; 
-    }
+  }
+
+}
+
+.links-des {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  color: #283C5A;
+  height: 40px;
+  font-weight: bold;
+
+  & .fleche {
+    padding-left: 20px;
+  }
+
+  & .gastro {
+    padding-left: 20px;
+    color: #D4112D;
+  }
+
+  & a {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 
 .description {
-        margin: 16px;
-        font-size:  18px;
-        text-align: center;
-        color: #000000;
-        font-weight: medium;
-        margin-left: 40px;
+  margin: 16px;
+  font-size: 18px;
+  text-align: center;
+  color: #000000;
+  font-weight: medium;
+  margin-left: 40px;
 
-    & .cuisine{
-        color: #D4112D;
-    }
+  & .cuisine {
+    color: #D4112D;
+  }
 }
-.food{
-    & h3{
-        margin-left: 40px;
-        color: #283C5A;
-        font-size: 40px;
-        font-weight: bold;
-    }
-}
-.entree{
-    display: flex;
-    margin: 40px;
-    position: relative;
-    
-    & img{
-        width: 600px;
-    }
-    & .text-entree{
-        width: 60%;
-        position: absolute;
-        padding: 20px;
-        background-color: rgba(242, 242, 242, 0.77);
-        margin-left: 400px;
-        margin-top: 40px;
 
-        & h1{
-            font-size: 20px;
-            font-weight: bold;
-        }
-        & p{
-            line-height: 25px;
-            padding-left: 20px;
-        }
-    }
+.food {
+  & h3 {
+    margin-left: 40px;
+    color: #283C5A;
+    font-size: 40px;
+    font-weight: bold;
+  }
 }
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .hero{
+
+.entree {
+  display: flex;
+  margin: 40px;
+  position: relative;
+
+  & img {
+    width: 600px;
+  }
+
+  & .text-entree {
+    width: 60%;
+    position: absolute;
+    padding: 20px;
+    background-color: rgba(242, 242, 242, 0.77);
+    margin-left: 400px;
+    margin-top: 40px;
+
+    & h2 {
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    & p {
+      line-height: 25px;
+      padding-left: 20px;
+    }
+  }
+}
+
+@media only screen and (width < 990px) {
+  .hero {
     height: 35%;
-    & .heroFood{
-        & h1{
-            font-size: 70px;
-        }
+
+    & .heroFood {
+      & h1 {
+        font-size: 70px;
+      }
     }
-}
+  }
+
   .entree {
     flex-direction: column;
     gap: 2em;
     align-items: center;
+
     & .text-entree {
       position: static;
       margin-top: 0px;
       margin-left: 0px;
       width: 63%;
     }
+
+    & .image-entree img {
+      width: 100%;
+    }
+
+    & .image-entree,
+    & .text-entree {
+      width: 90%;
+      border-radius: 50px;
+      overflow: hidden;
+    }
+
+    & .text-entree h2 {
+      text-align: center;
+    }
   }
-  .image-entree img {
-    width: 100%;
-  }
-  .image-entree,
-  .text-entree {
-    width: 70%;
-    border-radius: 50px;
-    overflow: hidden;
-  }
-  .text-entree h2 {
-    text-align: center;
-  }
+
   .end,
   .border-b {
     display: none;
   }
+
   /* the next lines is for the reversed cardes */
   .reverse {
     display: flex;
     flex-direction: column !important;
+
     & .text-entree {
       margin-right: 0px !important;
       margin-top: 0px !important;
     }
   }
+
   /* for some reason I don't get the resolts that I want unless I add the !important */
 }
 
-.border-b{
-    margin-left: 40px;
-    content: "";
-    width: 400px;
-    border-bottom: 2px solid red;
-}
-.reverse{
-    display: flex;
-    flex-direction: row-reverse;
-    & .text-entree{
-        margin-right: 400px;
-        margin-top: 40px;
+@media (width < 700px) {
+  .hero {
+    height: 35%;
 
+    & .heroFood {
+      & h1 {
+        font-size: 50px;
+      }
     }
+  }
+
+  .description {
+    margin: 16px;
+    font-size: 15px;
+    text-align: justify;
+  }
+  .food {
+    & h3 {
+      font-size: 30px;
+    }
+  }
+  .entree {
+    & .text-entree {
+        & h2 {
+          font-size: 25px;
+          text-align: center;
+        }
+        & p{
+          font-size: 15px;
+        }
+    
+    }
+
+    & .image-entree img {
+      width: 100%;
+    }
+
+    & .image-entree,
+    & .text-entree {
+      width: 90%;
+      border-radius: 50px;
+      overflow: hidden;
+    }
+
+    & .text-entree h2 {
+      text-align: center;
+    }
+  }
 }
-.end{
-    margin-left: 65%;
+
+.border-b {
+  margin-left: 40px;
+  content: "";
+  width: 25rem;
+  border-bottom: 2px solid red;
+}
+
+.reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.end {
+  margin-left: 65%;
 }
